@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+.start-screen,
+.login-screen {
+	display: flex;
+	align-items: center;
+}
+.start-screen > div,
+.login-screen > div {
+	flex: 1;
+	height: 100vh;
+	display: flex;
+	padding: 15px 50px;
+	align-items: center;
+	text-align: center;
+}
+.start-screen > div ._inner,
+.login-screen > div ._inner {
+	 width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+._info {
+	background: #fff;
+}
+._coloredbox + div {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	padding: 0;
+}
+._coloredbox {
+    background-image: linear-gradient(-50deg, #970C60 20%, #FB3532 70%);
+    position: absolute;
+    top: -23%;
+    left: -7%;
+    width: 450px;
+    height: 410px;
+    border-radius: 50%;
+}
+._coloredbox:after {
+    background-image: linear-gradient(-50deg, #FB3532 20%, #970C60 70%);
+    content: " ";
+    position: absolute;
+    top: -23%;
+    left: 7%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+._daystatus {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+._loginbtn {
+	background-image: linear-gradient(-90deg, #430087, #970C60);
+}
+
+/* Login screen */
+.login-screen ._options {
+	background-image: linear-gradient(-90deg, #A2115B, #FB3532 );
+}
+.login-screen ._form {
+}
+.login-screen ._options ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.login-screen ._options ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.login-screen ._options ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  padding: 5px 50px 5px 5px;
+  margin:0 auto;
+  z-index: 9;
+  cursor: pointer;
+	color: #fff;
+}
+.login-screen ._options ul li .check{
+  display: block;
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  top: 10px;
+  right: 20px;
+	z-index: 5;
+}
+.login-screen ._options ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    top: 1px;
+    left: 1px;
+    margin: auto;
+}
+.login-screen ._options input[type=radio]:checked ~ .check {
+  border: 1px solid #fff;
+}
+.login-screen ._options input[type=radio]:checked ~ .check::before{
+  background: #fff;
+}
+.login-screen ._options ul li label {
+	text-align: left;
+}
+
+/* Video-screen */
+._user {
+	text-align: center;
+	font-size: 0;
+}
+._user > div {
+	width: 400px;
+	height: 320px;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+._bottom-options {
+	background: #ddd;
+}
+._bottom-options > div {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+}
+._call-options ul {
+	padding: 0;
+	margin: 0;
+}
+._call-options ul > li {
+	display: inline-block;
+	vertical-align: middle;
+}
+._call-controls > span {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-left: 1px solid #aaa;
+	line-height: 100px;
+}
+
+._right-options {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #fff;
+	width: 200px;
+}
+._right-options > div {
+	
+}

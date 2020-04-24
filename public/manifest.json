@@ -1,0 +1,8 @@
+{
+  "short_name": "Video Call APP",
+  "name": "Next generation video call app is here!",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
